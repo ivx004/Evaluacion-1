@@ -1,0 +1,16 @@
+{% extends 'parques/base.html' %}
+
+{% block title %}Actividades{% endblock %}
+
+{% block content %}
+  <h2>Actividades en la naturaleza</h2>
+  <p>Información sobre actividades recomendadas.</p>
+  <ul>
+    {% for act in actividades %}
+      <li>
+        <h4>{{ act.titulo }}</h4>
+        <p>{{ act.descripcion }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

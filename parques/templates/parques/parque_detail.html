@@ -1,0 +1,21 @@
+{% extends 'parques/base.html' %}
+
+{% block title %}{{ parque.nombre }}{% endblock %}
+
+{% block content %}
+  <article class="parque-detalle">
+    <h2>{{ parque.nombre }}</h2>
+    <p><strong>Región:</strong> {{ parque.region }}</p>
+    <p><strong>Superficie:</strong> {{ parque.superficie }}</p>
+    <p>{{ parque.descripcion }}</p>
+
+    <h4>Actividades</h4>
+    <ul>
+      {% for a in parque.actividades %}
+        <li>{{ a }}</li>
+      {% endfor %}
+    </ul>
+
+    <p><a href="{% url 'parques:parques_list' %}">Volver al catálogo</a></p>
+  </article>
+{% endblock %}

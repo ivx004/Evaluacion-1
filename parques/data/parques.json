@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Parque Nacional Torres del Paine",
+    "region": "Magallanes",
+    "superficie": "242,242 ha",
+    "descripcion": "Famoso por sus torres de granito, glaciares y rutas de trekking.",
+    "actividades": ["Trekking", "Fotografía", "Observación de fauna"]
+  },
+  {
+    "id": 2,
+    "nombre": "Parque Nacional Conguillío",
+    "region": "Araucanía",
+    "superficie": "59,000 ha",
+    "descripcion": "Bosques de araucarias, lagos y paisajes volcánicos.",
+    "actividades": ["Senderismo", "Acampada", "Observación de flora"]
+  },
+  {
+    "id": 3,
+    "nombre": "Parque Nacional Lauca",
+    "region": "Arica y Parinacota",
+    "superficie": "137,883 ha",
+    "descripcion": "Altiplano andino, lagunas y comunidades aymara cercanas.",
+    "actividades": ["Observación de fauna", "Ciclismo", "Caminatas"]
+  }
+]

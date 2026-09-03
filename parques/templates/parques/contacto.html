@@ -1,0 +1,16 @@
+{% extends 'parques/base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+  <h2>Contacto</h2>
+  <p>Si quieres más información, envíanos un mensaje (este formulario es de ejemplo y no envía datos).</p>
+
+  <form class="contact-form" method="post">
+    <label>Nombre<br><input type="text" name="nombre"></label><br>
+    <label>Correo<br><input type="email" name="email"></label><br>
+    <label>Mensaje<br><textarea name="mensaje"></textarea></label><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+{% endblock %}

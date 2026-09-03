@@ -1,0 +1,20 @@
+/* Simple styles to provide consistent layout */
+:root{
+  --accent:#2c6b4b;
+  --muted:#666;
+  --max-width:900px;
+}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;color:#222;margin:0;padding:0;background:#f7f7f7}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:var(--accent);color:#fff;padding:1rem 0}
+.site-title{margin:0}
+.navbar{margin-top:0.5rem}
+.navbar a{color:#fff;margin-right:1rem;text-decoration:none}
+.site-footer{background:#222;color:#fff;padding:0.75rem 0;margin-top:2rem}
+.main{padding:1rem}
+.cards{list-style:none;padding:0;display:flex;gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);flex:1}
+.parques-list{list-style:none;padding:0}
+.parques-list li{background:#fff;margin-bottom:0.75rem;padding:0.75rem;border-radius:6px}
+.contact-form input,.contact-form textarea{width:100%;max-width:100%;padding:0.5rem;margin-top:0.25rem}
+button{background:var(--accent);color:#fff;padding:0.5rem 1rem;border:none;border-radius:4px}
