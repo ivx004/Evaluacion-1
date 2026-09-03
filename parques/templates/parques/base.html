@@ -5,29 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Parques Nacionales de Chile{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'parques/style.css' %}">
+    <link rel="stylesheet" href="{% static 'parques/estilos.css' %}">
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <h1 class="site-title">Parques Nacionales de Chile</h1>
-        <nav class="navbar">
-          <a href="{% url 'parques:home' %}">Inicio</a>
-          <a href="{% url 'parques:parques_list' %}">Parques</a>
-          <a href="{% url 'parques:actividades' %}">Actividades</a>
-          <a href="{% url 'parques:contacto' %}">Contacto</a>
-        </nav>
-      </div>
-    </header>
+    {% include 'parques/partials/header.html' %}
 
     <main class="container">
       {% block content %}{% endblock %}
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>Proyecto de ejemplo — Conservación y Naturaleza</p>
-      </div>
-    </footer>
+    {% include 'parques/partials/footer.html' %}
   </body>
 </html>

@@ -1,0 +1,23 @@
+{% extends 'parques/base.html' %}
+
+{% block title %}Inicio - Parques Nacionales{% endblock %}
+
+{% block content %}
+  <h2>Bienvenido</h2>
+  <p>Explora algunos de los parques nacionales más emblemáticos de Chile.</p>
+
+  <section class="featured">
+    <h3>Destacados</h3>
+    <ul class="cards">
+      {% for parque in featured %}
+        <li class="card">
+          <h4>{{ parque.nombre }}</h4>
+          <p><strong>Región:</strong> {{ parque.region }}</p>
+          <p>{{ parque.descripcion }}</p>
+          <p><a href="{% url 'parques:parque_detail' parque.id %}">Ver detalle</a></p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+{% endblock %}

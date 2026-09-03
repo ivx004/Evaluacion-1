@@ -1,0 +1,18 @@
+{% extends 'parques/base.html' %}
+
+{% block title %}Catálogo de Parques{% endblock %}
+
+{% block content %}
+  <h2>Catálogo de Parques</h2>
+  <p>Listado dinámico cargado desde JSON.</p>
+
+  <ul class="parques-list">
+    {% for parque in parques %}
+      <li>
+        <h3><a href="{% url 'parques:parque_detail' parque.id %}">{{ parque.nombre }}</a></h3>
+        <p><strong>Región:</strong> {{ parque.region }} — <strong>Superficie:</strong> {{ parque.superficie }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
